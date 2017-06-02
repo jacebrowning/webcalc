@@ -1,2 +1,3 @@
 # webcalc
-Demo DevOps project for Beer City Code 2017
+
+Demo project for the 2017 Beer City Code workshop on Continuous Delivery.

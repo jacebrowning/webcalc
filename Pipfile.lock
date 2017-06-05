@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "83336ec96f67d6424bd73c7dce19992b799f62e6afb6473835e36100701daadf"
+            "sha256": "37fa20abe12342fe5a8ca2e774bcfb9efd03764d9245920f71e4a738bd017451"
         },
         "requires": {
             "python_version": "3.6"
@@ -19,6 +19,9 @@
         },
         "flask": {
             "version": "==0.12.2"
+        },
+        "gunicorn": {
+            "version": "==19.7.1"
         },
         "itsdangerous": {
             "version": "==0.24"

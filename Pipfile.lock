@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "996bb82c52800597d0f4fb05cd97b5f180688b1fa49f123a531e2206a46edfbc"
+            "sha256": "92447292109458705626dd51d4bbf9211a8a8d920850b52239f2da41c4f890c5"
         },
         "requires": {
             "python_version": "3.6"
@@ -37,6 +37,18 @@
         }
     },
     "develop": {
+        "argh": {
+            "version": "==0.26.2"
+        },
+        "colorama": {
+            "version": "==0.3.9"
+        },
+        "docopt": {
+            "version": "==0.6.2"
+        },
+        "pathtools": {
+            "version": "==0.1.2"
+        },
         "py": {
             "version": "==1.4.34"
         },
@@ -49,8 +61,17 @@
         "pytest-expecter": {
             "version": "==0.2.2.post6"
         },
+        "pytest-watch": {
+            "version": "==4.1.0"
+        },
+        "pyyaml": {
+            "version": "==3.12"
+        },
         "setuptools": {
             "version": "==36.0.1"
+        },
+        "watchdog": {
+            "version": "==0.8.3"
         }
     }
 }

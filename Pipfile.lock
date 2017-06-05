@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "37fa20abe12342fe5a8ca2e774bcfb9efd03764d9245920f71e4a738bd017451"
+            "sha256": "996bb82c52800597d0f4fb05cd97b5f180688b1fa49f123a531e2206a46edfbc"
         },
         "requires": {
             "python_version": "3.6"
@@ -36,5 +36,21 @@
             "version": "==0.12.2"
         }
     },
-    "develop": {}
+    "develop": {
+        "py": {
+            "version": "==1.4.34"
+        },
+        "pytest": {
+            "version": "==3.1.1"
+        },
+        "pytest-describe": {
+            "version": "==0.11.0"
+        },
+        "pytest-expecter": {
+            "version": "==0.2.2.post6"
+        },
+        "setuptools": {
+            "version": "==36.0.1"
+        }
+    }
 }

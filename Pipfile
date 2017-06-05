@@ -8,6 +8,7 @@ python_version = "3.6"
 [packages]
 Flask = "*"
 gunicorn = "*"
+Flask-PyMongo = "*"
 
 [dev-packages]
 pytest = "*"

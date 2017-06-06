@@ -4,9 +4,6 @@
     "postdeploy": "python seeds.py"
   },
   "env": {
-    "MONGODB_URI": {
-      "required": true
-    }
   },
   "formation": {
   },

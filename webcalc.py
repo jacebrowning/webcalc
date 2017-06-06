@@ -19,6 +19,7 @@ def index():
 
 
 @app.route('/<int:a>/<name>/<int:b>')
+@app.route('/<float:a>/<name>/<float:b>')
 def calc(a, name, b):
     operation = mongo.db.operations.find_one({'name': name})
     if operation:

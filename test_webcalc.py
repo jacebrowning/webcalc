@@ -35,3 +35,8 @@ def describe_calc():
             response = client.get('/4/+/5')
 
             expect(response.data).contains(b"9")
+
+        def when_plus_with_floats(client, pattern):
+            response = client.get('/4.6/+/5.0')
+
+            expect(response.data).contains(b"9.6")

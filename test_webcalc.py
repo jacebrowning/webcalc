@@ -15,8 +15,8 @@ def pattern():
         mongo.db.operations.drop()
         mongo.db.operations.insert(
             dict(
-                name="+",
-                pattern="{{ a + b }}"
+                name="x",
+                pattern="{{ a * b }}"
             )
         )
 
@@ -31,12 +31,17 @@ def describe_index():
 
 def describe_calc():
 
-        def when_plus(client, pattern):
+        def when_plus(client):
             response = client.get('/4/+/5')
 
             expect(response.data).contains(b"9")
 
-        def when_plus_with_floats(client, pattern):
+        def when_plus_with_floats(client):
             response = client.get('/4.6/+/5.0')
 
             expect(response.data).contains(b"9.6")
+
+        def from_db(client, pattern):
+            response = client.get('/4/x/5')
+
+            expect(response.data).contains(b"20")

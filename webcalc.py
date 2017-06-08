@@ -18,14 +18,16 @@ def index():
     return "My favorite beverage is Bell's Hopslam."
 
 
-@app.route('/<int:a>/<name>/<int:b>')
-@app.route('/<float:a>/<name>/<float:b>')
-def calc(a, name, b):
-    operation = mongo.db.operations.find_one({'name': name})
+@app.route('/<int:a>/<op>/<int:b>')
+@app.route('/<float:a>/<op>/<float:b>')
+def calc(a, op, b):
+    operation = mongo.db.operations.find_one({'name': op})
     if operation:
         return Template(operation['pattern']).render(a=a, b=b)
+    elif op == '+':
+        return f"Result: {a} {op} {b} = {a + b}"
     else:
-        return f"Result: {a} {name} {b} = ???"
+        return f"Result: {a} {op} {b} = ???"
 
 
 if __name__ == '__main__':

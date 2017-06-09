@@ -44,4 +44,4 @@ def describe_calc():
         def from_db(client, pattern):
             response = client.get('/4/x/5')
 
-            expect(response.data).contains(b"20")
+            expect(response.data) == b'<img src="https://memegen.link/iw/_/20.jpg">'

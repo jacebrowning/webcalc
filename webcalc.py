@@ -23,7 +23,8 @@ def index():
 def calc(a, op, b):
     operation = mongo.db.operations.find_one({'name': op})
     if operation:
-        return Template(operation['pattern']).render(a=a, b=b)
+        result = Template(operation['pattern']).render(a=a, b=b)
+        return f'<img src="https://memegen.link/iw/_/{result}.jpg">'
     elif op == '+':
         return f"Result: {a} {op} {b} = {a + b}"
     else:

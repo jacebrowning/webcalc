@@ -15,7 +15,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-    return "My favorite beverage is Bell's Hopslam."
+    return "My favorite beverage is really Bell's Hopslam."
 
 
 @app.route('/<int:a>/<op>/<int:b>')
